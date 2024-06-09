@@ -55,8 +55,9 @@ export const Experience = () => {
           curvePoints[1].y,
           curvePoints[1].z
         ),
-        subtitle: `Welcome to Wawatmos,
-Have a seat and enjoy the ride!`,
+        subtitle: `こんにちは！
+        このウェブサイトは3Dの技術を使って
+        作成されています。`,
       },
       {
         cameraRailDist: 1.5,
@@ -65,9 +66,9 @@ Have a seat and enjoy the ride!`,
           curvePoints[2].y,
           curvePoints[2].z
         ),
-        title: "Services",
-        subtitle: `Do you want a drink?
-We have a wide range of beverages!`,
+        title: "サービス",
+        subtitle: `ご要望にお応えしてインパクトのある
+        3Dウェブサイトを開発いたします。`,
       },
       {
         cameraRailDist: -1,
@@ -76,8 +77,9 @@ We have a wide range of beverages!`,
           curvePoints[3].y,
           curvePoints[3].z
         ),
-        title: "Fear of flying?",
-        subtitle: `Our flight attendants will help you have a great journey`,
+        title: "技術",
+        subtitle: `React×Three.jsを使って開発しています。
+        3D特化の技術力で支援します。`,
       },
       {
         cameraRailDist: 1.5,
@@ -86,8 +88,9 @@ We have a wide range of beverages!`,
           curvePoints[4].y,
           curvePoints[4].z - 12
         ),
-        title: "Movies",
-        subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
+        title: "差別化",
+        subtitle: `このサイト、印象に残りますよね。
+        御社のサービスも印象に残しましょう。`,
       },
     ];
   }, []);
@@ -463,22 +466,6 @@ We have a wide range of beverages!`,
       {clouds.map((cloud, index) => (
         <Cloud {...cloud} key={index} />
       ))}
-      {/* <Cloud scale={[1, 1, 1.5]} position={[-3.5, -1.2, -7]} />
-      <Cloud scale={[1, 1, 2]} position={[3.5, -1, -10]} rotation-y={Math.PI} />
-      <Cloud
-        scale={[1, 1, 1]}
-        position={[-3.5, 0.2, -12]}
-        rotation-y={Math.PI / 3}
-      />
-      <Cloud scale={[1, 1, 1]} position={[3.5, 0.2, -12]} />
-
-      <Cloud
-        scale={[0.4, 0.4, 0.4]}
-        rotation-y={Math.PI / 9}
-        position={[1, -0.2, -12]}
-      />
-      <Cloud scale={[0.3, 0.5, 2]} position={[-4, -0.5, -53]} />
-      <Cloud scale={[0.8, 0.8, 0.8]} position={[-1, -1.5, -100]} /> */}
     </>
   );
 };
